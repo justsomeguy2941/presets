@@ -1,0 +1,4 @@
+thinking:
+  type: "enabled"
+  clear_thinking: "true"
+do_sample: "true"
