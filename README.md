@@ -4,7 +4,7 @@
 - Fixing Safety Guardrail false positives for legal, fictional, text-based content in GLM 4.7 and 5.0.
 - Additional Information and advice to avoid censored results in general.
 - Important information when using the Z.AI coding (subscription) API and possibly other providers. 
-- Parameters, settings and provider user for testing.
+- Recommended settings and parameters.
 ---
 
 ### Restoring GLM 4.6/4.7 pattern thinking to GLM 5.0 for better creative writing/roleplay results and improved instruction adherence:
@@ -127,7 +127,7 @@ The following prompts **should work both ways** and have served me well:
 I provided links to screenshots of how and where to change the parameters in the next section. This may be a problem with some third party providers as well.
 
 ---
-### General information and recommendations for settings and parameters:
+### Recommended settings and parameters:
 - Provider used for testing: Z.AI official pay-per-use API. 
 - Parameters used and recommended: Below or [here](https://github.com/justsomeguy2941/presets/blob/main/parameters.png).
 ```yaml
