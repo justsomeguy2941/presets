@@ -3,7 +3,8 @@
 - Restoring GLM 4.6/4.7 pattern thinking to GLM 5.0 for better creative writing/roleplay results and improved instruction adherence.
 - Fixing Safety Guardrail false positives for legal, fictional, text-based content in GLM 4.7 and 5.0.
 - Additional Information and advice to avoid censored results in general.
-- General information and recommendations for settings and parameters.
+- Important information when using the Z.AI coding (subscription) API and possibly other providers. 
+- Parameters, settings and provider user for testing.
 ---
 
 ### Restoring GLM 4.6/4.7 pattern thinking to GLM 5.0 for better creative writing/roleplay results and improved instruction adherence:
@@ -116,7 +117,16 @@ The following prompts **should work both ways** and have served me well:
 ```
 
 ---
+### Important information when using the Z.AI coding (subscription) API and possibly other providers. 
+- The issue: Z.AI's coding (subscription) API has different default parameters than their pay-per-use API, that can negatively effect creative writing and roleplay.
 
+1. do_sample defaults to "false", which completely disables the functionality of temperature and top_k while forcing the temperature to ZERO, resulting in a more reproducible, but far less creative output. Make sure it's set to "true". [Official documentation](https://docs.z.ai/guides/overview/concept-param#do_sample)
+
+2. clear_thinking defaults to "false", which enables "preserved thinking", a feature that may or may not be useful for roleplay in the future, but is not supported by SillyTavern yet. I recommend setting it to "true". [Official documentation](https://docs.z.ai/guides/capabilities/thinking-mode#preserved-thinking)
+
+I provided links to screenshots of how and where to change the parameters in the next section. This may be a problem with some third party providers as well.
+
+---
 ### General information and recommendations for settings and parameters:
 - Provider used for testing: Z.AI official pay-per-use API. 
 - Parameters used and recommended: Below or [here](https://github.com/justsomeguy2941/presets/blob/main/parameters.png).
@@ -124,7 +134,7 @@ The following prompts **should work both ways** and have served me well:
 temperature: 1
 top_p: 0.95
 ```
-- Additional parameters used and recommended: Below or [here](https://github.com/justsomeguy2941/presets/blob/main/additional_parameters.txt). To be put [here](https://raw.githubusercontent.com/justsomeguy2941/presets/refs/heads/main/additional_parameters.png).
+- Additional parameters used and recommended: Below or [here](https://github.com/justsomeguy2941/presets/blob/main/additional_parameters.txt). They have to be placed in [Additional Parameters -> Include Body Parameters](https://raw.githubusercontent.com/justsomeguy2941/presets/refs/heads/main/additional_parameters.png) in the [Connection Profile](https://raw.githubusercontent.com/justsomeguy2941/presets/refs/heads/main/connection_profile.png).
 ```yaml
 thinking:
   type: "enabled"
