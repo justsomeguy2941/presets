@@ -1,3 +1,5 @@
+**26.02.2026:** Updated to include Garpagan's [optimal Post-Processing settings](https://www.reddit.com/r/SillyTavernAI/comments/1r8152b/comment/o620zfb/).
+
 ---
 ### Table of Contents
 - Restoring GLM 4.6/4.7 pattern thinking to GLM 5.0 for better creative writing/roleplay results and improved instruction adherence.
@@ -8,10 +10,13 @@
 ---
 
 ### Restoring GLM 4.6/4.7 pattern thinking to GLM 5.0 for better creative writing/roleplay results and improved instruction adherence:
-**Note:** In order for this to work reliably, you have to either set Prompt Post-Processing to **"Single user message"** as shown [here](https://raw.githubusercontent.com/justsomeguy2941/presets/refs/heads/main/connection_profile.png), or change the prompt's role to **"User"** as shown [here](https://raw.githubusercontent.com/justsomeguy2941/presets/refs/heads/main/deep_thinking.png). It needs to be at the **very bottom** of the preset as well, so GLM reads it last.
-1. Create a new "Deep Thinking" prompt and insert the text from below or here [here](https://github.com/justsomeguy2941/presets/blob/main/deep_thinking.txt).
-2. Save, insert and enable it, then pull it to the bottom of the preset.
-3. It should look like [this](https://raw.githubusercontent.com/justsomeguy2941/presets/refs/heads/main/deep_thinking.png).
+**Important Update: [New findings show](https://www.reddit.com/r/SillyTavernAI/comments/1r8152b/comment/o620zfb/) that setting **Prompt Post-Processing** to **"Semi-strict (alternating roles)"** is essential for GLM 5.0 to process instructions properly.
+
+1. Set **Prompt Post-Processing** to **"Semi-strict (alternating roles)"** as shown [here](https://raw.githubusercontent.com/justsomeguy2941/presets/refs/heads/main/connection_profile_new.png).
+2. Set **Character Names Behavior** to **"None"** as shown [here](https://raw.githubusercontent.com/justsomeguy2941/presets/refs/heads/main/char_name_behavior.png). 
+3. Create a new "Deep Thinking" prompt and insert the text from below or [here](https://github.com/justsomeguy2941/presets/blob/main/deep_thinking.txt).
+4. Make sure that the prompt's role is set to **"User"** as shown [here](https://raw.githubusercontent.com/justsomeguy2941/presets/refs/heads/main/deep_thinking.png).
+5. Save, insert and enable it, then pull it to the bottom of the preset. It should look like [this](https://raw.githubusercontent.com/justsomeguy2941/presets/refs/heads/main/deep_thinking.png).
 
 Feel free to edit and adjust to fit your existing preset and preferences.
 
@@ -130,11 +135,12 @@ I provided links to screenshots of how and where to change the parameters in the
 ### Recommended settings and parameters:
 - Provider used for testing: Z.AI official pay-per-use API. 
 - Parameters used and recommended: Below or [here](https://github.com/justsomeguy2941/presets/blob/main/parameters.png).
+- **GLM 5.0 only:** [Prompt Post-Processing set to "Semi-Strict (alternating roles)"](https://www.reddit.com/r/SillyTavernAI/comments/1r8152b/comment/o620zfb/) as shown [here](https://raw.githubusercontent.com/justsomeguy2941/presets/refs/heads/main/connection_profile_new.png). Character Names Behavior set to **"None"** as shown [here](https://raw.githubusercontent.com/justsomeguy2941/presets/refs/heads/main/char_name_behavior.png). 
 ```yaml
 temperature: 1
 top_p: 0.95
 ```
-- Additional parameters used and recommended: Below or [here](https://github.com/justsomeguy2941/presets/blob/main/additional_parameters.txt). They have to be placed in [Additional Parameters -> Include Body Parameters](https://raw.githubusercontent.com/justsomeguy2941/presets/refs/heads/main/additional_parameters.png) in the [Connection Profile](https://raw.githubusercontent.com/justsomeguy2941/presets/refs/heads/main/connection_profile.png).
+- Additional parameters used and recommended: Below or [here](https://github.com/justsomeguy2941/presets/blob/main/additional_parameters.txt). They have to be placed in [Additional Parameters -> Include Body Parameters](https://raw.githubusercontent.com/justsomeguy2941/presets/refs/heads/main/additional_parameters.png) in the [Connection Profile](https://raw.githubusercontent.com/justsomeguy2941/presets/refs/heads/main/connection_profile_new.png).
 ```yaml
 thinking:
   type: "enabled"
