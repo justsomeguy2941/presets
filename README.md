@@ -10,7 +10,7 @@
 ---
 
 ### Restoring GLM 4.6/4.7 pattern thinking to GLM 5.0 for better creative writing/roleplay results and improved instruction adherence:
-**Important Update: [New findings show](https://www.reddit.com/r/SillyTavernAI/comments/1r8152b/comment/o620zfb/) that setting **Prompt Post-Processing** to **"Semi-strict (alternating roles)"** is essential for GLM 5.0 to process instructions properly.
+**Important Update:** [New findings show](https://www.reddit.com/r/SillyTavernAI/comments/1r8152b/comment/o620zfb/) that setting **Prompt Post-Processing** to **"Semi-strict (alternating roles)"** is essential for GLM 5.0 to process instructions properly.
 
 1. Set **Prompt Post-Processing** to **"Semi-strict (alternating roles)"** as shown [here](https://raw.githubusercontent.com/justsomeguy2941/presets/refs/heads/main/connection_profile_new.png).
 2. Set **Character Names Behavior** to **"None"** as shown [here](https://raw.githubusercontent.com/justsomeguy2941/presets/refs/heads/main/char_name_behavior.png). 
