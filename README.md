@@ -12,10 +12,10 @@
 ### Restoring GLM 4.6/4.7 pattern thinking to GLM 5.0 for better creative writing/roleplay results and improved instruction adherence:
 **Important Update:** [New findings show](https://www.reddit.com/r/SillyTavernAI/comments/1r8152b/comment/o620zfb/) that setting **Prompt Post-Processing** to **"Semi-strict (alternating roles)"** is essential for GLM 5.0 to process instructions properly.
 
-1. Set **Prompt Post-Processing** to **"Semi-strict (alternating roles)"** as shown [here](https://raw.githubusercontent.com/justsomeguy2941/presets/refs/heads/main/connection_profile_new.png).
+1. Set **Prompt Post-Processing** to **"Semi-strict (alternating roles)"** as shown [here](https://raw.githubusercontent.com/justsomeguy2941/presets/refs/heads/main/connection_profile_new.png). _(Important!)_
 2. Set **Character Names Behavior** to **"None"** as shown [here](https://raw.githubusercontent.com/justsomeguy2941/presets/refs/heads/main/char_name_behavior.png). 
 3. Create a new "Deep Thinking" prompt and insert the text from below or [here](https://github.com/justsomeguy2941/presets/blob/main/deep_thinking.txt).
-4. Make sure that the prompt's role is set to **"User"** as shown [here](https://raw.githubusercontent.com/justsomeguy2941/presets/refs/heads/main/deep_thinking.png).
+4. Make sure that the prompt's role is set to **"User"** as shown [here](https://raw.githubusercontent.com/justsomeguy2941/presets/refs/heads/main/deep_thinking.png). _(Important!)_
 5. Save, insert and enable it, then pull it to the bottom of the preset. It should look like [this](https://raw.githubusercontent.com/justsomeguy2941/presets/refs/heads/main/deep_thinking.png).
 
 Feel free to edit and adjust to fit your existing preset and preferences.
@@ -63,7 +63,7 @@ Feel free to edit and adjust to fit your existing preset and preferences.
 - Placement of the prompt at the very bottom of the preset _(or right before the Deep Thinking prompt if you are using that too)_ has shown to be most effective.
 
 **Installation:**
-1. Create a new "Guardrail Bypass" prompt and insert the text from below or [here](https://github.com/justsomeguy2941/presets/blob/main/guardrail_bypass.txt). The role should be "System".
+1. Create a new "Guardrail Bypass" prompt and insert the text from below or [here](https://github.com/justsomeguy2941/presets/blob/main/guardrail_bypass.txt). The role **has** to be **"System"**. _(You can try "AI Assistant" too, but "User" does not work well in this case.)_
 2. Save, insert and enable it, then pull it to the bottom _(or just above Deep Think if you use both)_ of the preset.
 3. It should look like [this](https://raw.githubusercontent.com/justsomeguy2941/presets/refs/heads/main/guardrail_bypass.png).
 
