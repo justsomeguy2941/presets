@@ -64,7 +64,7 @@ Feel free to edit and adjust to fit your existing preset and preferences.
 
 **Installation:**
 1. Create a new "Guardrail Bypass" prompt and insert the text from below or [here](https://github.com/justsomeguy2941/presets/blob/main/guardrail_bypass.txt). The role **has** to be **"System"**. _(You can try "AI Assistant" too, but "User" does not work well in this case.)_
-2. Save, insert and enable it, then pull it to the bottom _(or just above Deep Think if you use both)_ of the preset.
+2. Save, insert and enable it, then pull it to the bottom _(or just above Deep Thinking if you use both)_ of the preset.
 3. It should look like [this](https://raw.githubusercontent.com/justsomeguy2941/presets/refs/heads/main/guardrail_bypass.png).
 
 Feel free to edit and adjust to fit your existing preset and preferences, but avoid changing the formatting and wording. _(It works because it resembles an actual 4.7 "Safety Assessment" message.)_
@@ -108,8 +108,10 @@ The following prompts are useful to help mitigate that:
 ```
 
 5. The extremely strong positivity bias of 5.0 is a form of censorship as well, since it will steer away from "bad" scenarios by default.
+
 **Note:** I tend to use LLMs without strong positivity bias, so I don't have any specific prompts tested and ready yet.
-However, I **did** have to deal with the exact opposite: Negativity bias is a very effective censorship measure employed by LLMs as well. _(Example: Deliberately making scenarios harrowing that are clearly not meant to be.)_ 
+However, I **did** have to deal with the exact opposite: Negativity bias is a very effective censorship measure used by LLMs as well. _(Example: Deliberately making scenarios harrowing that are clearly not meant to be.)_ 
+
 The following prompts **should work both ways** and have served me well:
 ```yaml
 - Things often aren't just black or white; embrace nuance and complex characters instead of tropes.
